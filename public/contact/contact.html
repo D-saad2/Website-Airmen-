@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>AIRMEN</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><div class="brand-title">AIRMEN</div></a>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../products/products.html">Projects</a></li>
+            <li><a href="../About/about.html">About</a></li>
+            <li><a href="../contact/contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="sat">
+        <div class="loginbox">
+          <h1>CONTACT</h1>
+          <section class="cnt">
+            <form class="info" action="#">
+              <label for="name"> Name</label>
+              <input type="text" id="name" />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+
+              <label for="telephone"> Telephone</label>
+              <input type="tel" id="telephone" />
+
+              <label for="question">Enter your querry</label>
+              <textarea name="question" id="" cols="30" rows="10"></textarea>
+
+              <input type="submit" name="Submit" class="btn" />
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Airmen&copy;</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script>
+    const togglebutton = document.getElementsByClassName("toggle-button")[0];
+    const navbarlinks = document.getElementsByClassName("nav-links")[0];
+    togglebutton.addEventListener("click", () => {
+      navbarlinks.classList.toggle("active");
+    });
+  </script>
+</html>

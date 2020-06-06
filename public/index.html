@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>AIRMEN</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><div class="brand-title">AIRMEN</div></a>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products/products.html">Projects</a></li>
+            <li><a href="/About/about.html">About</a></li>
+            <li><a href="/contact/contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="vertical-center">
+          <h2>BEST AIR EXPERIENCE IN THE <br />WORLD</h2>
+          <h1>Getting you towards the skies and beyond</h1>
+        </div>
+      </section>
+      <span class="gap"></span>
+      <section class="spaceproject">
+        <div class="vertical-center">
+          <h2>Space Exploration Programs</h2>
+          <center>
+            <a href="" class="btn-link">
+              <button class="btn">Learn more</button></a
+            >
+          </center>
+        </div>
+      </section>
+      <span class="gap"></span>
+      <section class="robtics">
+        <div class="vertical-center">
+          <h2>Robotics <br />New!</h2>
+
+          <center>
+            <a href=""><button class="btn robs">Learn more</button></a><br /><a
+              href=""
+              ><button class="btn">
+                Browse Work
+              </button></a
+            >
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Airmen&copy;</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script>
+    const togglebutton = document.getElementsByClassName("toggle-button")[0];
+    const navbarlinks = document.getElementsByClassName("nav-links")[0];
+    togglebutton.addEventListener("click", () => {
+      navbarlinks.classList.toggle("active");
+    });
+  </script>
+</html>

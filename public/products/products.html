@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="prodstyl.css" />
+    <title>Document</title>
+  </head>
+  <header>
+    <nav>
+      <a href="/index.html"><div class="brand-title">AIRMEN</div></a>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="../products/products.html">Projects</a></li>
+          <li><a href="/About/about.html">About</a></li>
+          <li><a href="../contact/contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="img-1">
+      <div class="ptext">
+        <span class="border">
+          Propollers
+        </span>
+      </div>
+    </div>
+    <section class="section-light">
+      <h2>PROPELLERS</h2>
+      <p>
+        State of the art propellers available and tested to be used for flight
+        through every part of the Earth
+      </p>
+    </section>
+    <div class="img-2">
+      <div class="ptext">
+        <span class="border">
+          Rovers
+        </span>
+      </div>
+    </div>
+    <section class="section-dark">
+      <h2>Space launch Projects</h2>
+      <p>
+        Rovers and Rockets created specifically for deep space exploration
+      </p>
+    </section>
+    <div class="img-3">
+      <div class="ptext">
+        <span class="border">
+          Satellite
+        </span>
+      </div>
+    </div>
+    <section class="section-dark">
+      <h2>Satellite projects</h2>
+      <p>
+        Sattelites made to orbit the outer planets for further studies on
+        they're surfaces
+      </p>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Airmen&copy;</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script>
+    const togglebutton = document.getElementsByClassName("toggle-button")[0];
+    const navbarlinks = document.getElementsByClassName("nav-links")[0];
+    togglebutton.addEventListener("click", () => {
+      navbarlinks.classList.toggle("active");
+    });
+  </script>
+</html>

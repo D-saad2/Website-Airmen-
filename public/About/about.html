@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>AIRMEN</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><div class="brand-title">AIRMEN</div></a>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../products/products.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="../contact/contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="picture">
+      <div class="vertical-center">
+        <h2>About us</h2>
+      </div>
+    </section>
+    <div class="wrapper">
+      <section class="info-img">
+        <h1>Airmen<br />Aims beyond the sky</h1>
+        <p>
+          Airmen are an innovative technological company <br />
+          made with the idea that there is a world beyond Earth! <br />
+          Our main area is aeronautics,aerospace and astronautics <br />
+          but we are expanding our field into AI and robotics as well <br />
+          to create some potential technologies that will help humans <br />
+          achieve our long dream of exploring the stars.
+        </p>
+      </section>
+    </div>
+    <footer>
+      <ul>
+        <li><a href="#">Airmen&copy;</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script>
+    const togglebutton = document.getElementsByClassName("toggle-button")[0];
+    const navbarlinks = document.getElementsByClassName("nav-links")[0];
+    togglebutton.addEventListener("click", () => {
+      navbarlinks.classList.toggle("active");
+    });
+  </script>
+</html>
